@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Игра-кликер" Height="450" Width="800" MinHeight="450" MinWidth="800">
+    <Grid Background="#FF424242">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10" Background="#FFFDFDFD">
+            <Grid>
+                <Image Margin="10,10,10.2,185.4" Source="D:\МДК01.01\пр3\WpfApp1\Resources\monster1.jpg"/>
+                <Label Content="Основные характеристики персонажа:" Margin="10,0,0,160" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontWeight="Bold"/>
+                <Label x:Name="playerHealth" Content="Жизненные показатели: 100" Margin="10,0,0,129" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <Label x:Name="playerArmor" Content="Броня: 100" Margin="10,0,0,98" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <Label x:Name="playerLevel" Content="Уровень: 1" Margin="10,0,0,67" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <Label x:Name="playerGlasses" Content="Опыт: 0" Margin="10,0,0,36" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <Label x:Name="playerMoney" Content="Монеты: 0" Margin="10,0,0,5" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10" Background="#FFFDFDFD" Grid.Column="1">
+            <Grid>
+                <Image x:Name="emptyImage" Margin="10,10,10.2,185.4" Source="D:\МДК01.01\пр3\WpfApp1\Resources\monster2.png"/>
+                <Label Content="Основные характеристики персонажа:" Margin="10,0,0,160" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontWeight="Bold"/>
+                <Label x:Name="emptyHealth" Content="Жизненные показатели: 100" Margin="10,0,0,129" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <Label x:Name="emptyArmor" Content="Броня: 100" Margin="10,0,0,98" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            </Grid>
+        </Border>
+
     </Grid>
 </Window>
